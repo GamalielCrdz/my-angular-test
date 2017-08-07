@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-6">
+        <h1>Personas Actuales</h1>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let p of personas">{{p.id}} {{p.name}}</li>
+        </ul>
+        <hr>
+        <a class="btn btn-primary btn-block" (click)="addNote()">Anadir Persona</a>
+    </div>
+    <div class="col-sm-6" *ngIf="show_form">
+        <h1>Nueva Persona</h1>
+        <input type="text" class="form-control" [(ngModel)]="persona.id" placeholder="id de la persona" />
+        <hr>
+        <textarea class="form-control" [(ngModel)]="persona.name" placeholder="Nombre de la persona"> </textarea>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <a class="btn btn-danger btn-block" (click)="cancel()">Cancel</a>
+            </div>
+            <div class="col-md-6">
+                <a class="btn btn-primary btn-block" (click)="creteNote()">Guardar Persona</a>
+            </div>
+        </div>
+    </div>
+</div>

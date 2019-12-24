@@ -1,3 +1,12 @@
+# Descripcion
+
+This project allow you add persons to a list of persons.
+
+## Images
+![Image of Project1](./src/assets/capture1.png)
+=====================
+![Image of Project1](./src/assets/capture2.png)
+
 # Ejercicio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
